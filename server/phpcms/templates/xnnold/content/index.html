@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Page-Enter" content="revealTrans(duration=3, transition=4)">
+		<meta http-equiv="Page-Exit" content="revealTrans(duration=3, transition=5)">
+		<title>HAPPYN2</title>
+		<meta http-equiv="Page-Exit" content="revealTrans(duration=3, transition=5)">
+		<link href="{siteurl($siteid)}/statics/xnn/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="{siteurl($siteid)}/statics/xnn/js/jquery-1.11.0.min.js"></script>
+		<!-- Custom Theme files -->
+		<link href="{siteurl($siteid)}/statics/xnn/css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="{siteurl($siteid)}/statics/xnn/css/flexslider.css" type="text/css" media="screen" />
+		<!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			} >
+		</script>
+		<meta name="keywords" content="Coffee Bar Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"
+		/>
+		<!--Google Fonts-->
+		<!--<link href='http://fonts.useso.com/css?family=Ropa+Sans:400,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Courgette' rel='stylesheet' type='text/css'>-->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="{siteurl($siteid)}/statics/xnn/js/move-top.js"></script>
+		<script type="text/javascript" src="{siteurl($siteid)}/statics/xnn/js/easing.js"></script>
+
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event) {
+					event.preventDefault();
+					$('html,body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 1000);
+				});
+			});
+		</script>
+		<!-- //end-smoth-scrolling -->
+		<!--载入效果  start -->
+
+		<link rel="stylesheet" href="{siteurl($siteid)}/statics/xnn/css/fakeloader.css">
+		<!--<script src="{siteurl($siteid)}/statics/xnn/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>-->
+		<!--载入效果  END -->
+	</head>
+
+	<body>
+
+		<!--载入效果  start -->
+		<div class="fakeloader"></div>
+		<script src="{siteurl($siteid)}/statics/xnn/js/jquery.min.js"></script>
+		<script src="{siteurl($siteid)}/statics/xnn/js/fakeloader.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".fakeloader").fakeLoader({
+					timeToHide: 1200,
+					bgColor: "#fff",
+					imagePath: "{siteurl($siteid)}/statics/xnn/images/load_logo.gif"
+				});
+			});
+		</script>
+		<!--载入效果  END -->
+		<!--header start here-->
+		{template "content","header"}
+		
+		<!--header end here-->
+
+		<!--banner info start here-->
+		<div class="bann-info">
+			<div class="container">
+				<div class="bann-info-main">
+					<a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11">
+						<div class="col-md-4 bann-info-grid">
+							<img src="{siteurl($siteid)}/statics/xnn/images/b1.jpg" alt="" class="img-responsive">
+							<div class="ban-info-details">
+								<h3>诚意推荐</h3>
+								<p>我们精挑细选，只为有品味的你！</p>
+							</div>
+						</div>
+					</a>
+					<a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=13">
+						<div class="col-md-4 bann-info-grid">
+							<img src="{siteurl($siteid)}/statics/xnn/images/b2.jpg" alt="" class="img-responsive">
+							<div class="ban-info-details">
+								<h3>商品列表</h3>
+								<p>网罗各地精口，提供优势农产品</p>
+							</div>
+						</div>
+					</a>
+					<a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=15">
+						<div class="col-md-4 bann-info-grid">
+							<img src="{siteurl($siteid)}/statics/xnn/images/b3.jpg" alt="" class="img-responsive">
+							<div class="ban-info-details">
+								<h3>精品活动</h3>
+								<p>让你第一时间了解活动信息</p>
+							</div>
+						</div>
+					</a>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--banner info end here-->
+
+	</body>
+
+</html>

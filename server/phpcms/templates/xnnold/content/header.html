@@ -1,0 +1,38 @@
+	<link rel="stylesheet" type="text/css" href="{siteurl($siteid)}/statics/xnn/css/normalize.css}"/>
+	<script type="text/javascript" src="{siteurl($siteid)}/statics/xnn/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".headernav ul li").mouseover(function(){
+				$(this).css("background-color","#C60707");
+
+			});
+			$(".headernav ul li").mouseout(function(){
+				$(this).css("background-color","yellow");
+			});
+		});
+	</script>
+
+<div class="headertop">
+<div class="headernav">
+<img class="index_logo" src="{siteurl($siteid)}/statics/xnn/images/logo.gif">
+<ul>
+	<!--<li style="background-image: url({siteurl($siteid)}/statics/xnn/images/logo.gif);background-size:100% 100%;background-repeat: no-repeat;opacity: 1"><a href="{siteurl($siteid)}index.php">&nbsp;&nbsp;</a></li>-->
+	<a href="{siteurl($siteid)}/index.php"><li>首页</li></a>
+	<a href="{siteurl($siteid)}/html/aboutxnn/"><li>关于喜农农</li></a>
+	<a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11"><li>诚意推荐</li></a>
+	<a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=13"><li>商品列表</li></a>
+	<a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=15"><li>精品活动</li></a>
+	<a href="{siteurl($siteid)}/html/contactus/"><li>联系我们</li></a>
+</ul>
+</div>
+</div>
+<div style="clear:both"></div>
+<style>
+*{margin:0px;padding:0px;}
+
+.headernav .index_logo{float:left;}
+.headertop{width:100%;height:60px;background-color:rgb(186,12,47);padding:120px;}
+.headernav{height:80px;width:90%;margin:0px auto;}
+.headernav ul li{float:left;list-style: none;width:13%;text-align:center;height:80px;
+	line-height: 80px;background-color:yellow;font-weight:bolder;font-size:28px;border:1px solid #C60707;color:white;}
+</style>

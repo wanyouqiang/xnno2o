@@ -1,0 +1,8 @@
+<div style="position:fixed;top:96%;left:94%;border-radius: 8px;background-color:rgb(186,12,47);">
+			
+			<a href="{APP_PATH}index.php">
+				
+				<!--<img src="{APP_PATH}statics/xnn/images/back.png" width="100px">-->
+				<div style="color:white;font-weight:bolder;">·µ»ØÊ×Ò³</div>	
+			</a>
+		</div>

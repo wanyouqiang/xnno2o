@@ -1,0 +1,94 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="Shortcut Icon" href="{IMG_PATH}admin_img/favicon.ico">
+<title>商品列表</title>
+<meta http-equiv="refresh" content="300;url={APP_PATH}index.php"/>
+<link href="{APP_PATH}statics/xnn/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<script src="{APP_PATH}statics/xnn/js/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" href="{APP_PATH}statics/xnn/css/fakeloader.css">
+<link href="{APP_PATH}statics/xnn/css/mycss.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="{APP_PATH}statics/xnn/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
+</script>
+<meta name="keywords" content="Coffee Bar Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="text/javascript" src="{APP_PATH}statics/xnn/js/move-top.js"></script>
+<script src="{APP_PATH}statics/xnn/js/fakeloader.min.js"></script>
+<script type="text/javascript" src="{APP_PATH}statics/xnn/js/easing.js"></script>
+
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".fakeloader").fakeLoader({
+					timeToHide: 1200,
+					bgColor: "#fff",
+					imagePath: "{APP_PATH}statics/xnn/images/load_logo.gif"
+				});
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+<!-- //end-smoth-scrolling -->
+</head>
+<body>
+<div class="fakeloader"></div>
+<!--header start here-->
+<div class="header" style="height:180px">
+   <div class="container">
+        <div class="header-main">
+            <div class="top-nav">
+            	<span class="menu"> <img src="{APP_PATH}statics/xnn/images/icon.png" alt=""/></span>
+				<div style="float: left;margin-left:-50px;margin-top:20px"><a href="{APP_PATH}index.php"><img style="max-width: 100%" src="{APP_PATH}statics/xnn/images/logo.png" /></a></div>
+				<ul class="nav nav-pills nav-justified res">
+					<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=12" style="padding:32px"><i class="glyphicon glyphicon-star"> </i>关于喜农农</a></li>
+					<li ><a class="icon" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=11" style="padding:32px"><i class="glyphicon glyphicon-thumbs-up"> </i>诚意推荐</a></li>
+					<li><a class="active" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=13" style="padding:32px"><i  class="glyphicon glyphicon-list-alt"> </i>商品列表</a></li>
+					<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=15"  style="padding:32px"><i class="glyphicon glyphicon-picture"> </i>精品活动</a></li>
+					<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=14"  style="padding:32px"><i class="glyphicon glyphicon-envelope"> </i>联系我们</a></li>
+				</ul>
+							 <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.res" ).slideToggle( 300, function() {
+								  });
+								 });
+							</script>
+			 </div>	
+     <div class="clearfix"></div>
+   </div>	
+ </div>
+</div>
+	<div class="clearf"></div>
+	<div class="height_px"></div>
+<div class="img_activity">
+	<div class="clearf"></div>
+	{pc:content action="lists" catid="$catid" num="4" order="listorder DESC" page="$page"}
+		{loop $data $r}
+		<a href="{$r[url]}">
+			<div class="img_block">
+			<div class="thumb">
+			<img src="{$r[thumb]}" width="600px" height="300px" class="img_show"/>
+			<div class="intro_block">
+			{$r[title]}
+			</div>
+			<em></em>
+			</div>
+			</div>
+		</a>
+		{/loop}
+		</div>
+
+	{/pc}
+	<div class="clearf"></div>
+	</div>
+	<div style="clear:both"></div>
+	<div style="width:300px;margin:0 auto;">{$pages}</div>	
+		<div class="back-logo">
+			<a href="{APP_PATH}index.php">
+				<div class="back-block">返回首页</div>	
+			</a>
+		</div>
+</body>
+</html>

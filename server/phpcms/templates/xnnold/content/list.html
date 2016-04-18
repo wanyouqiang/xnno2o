@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(duration=3, transition=4)">
+<meta http-equiv="Page-Exit" content="revealTrans(duration=3, transition=5)">
+<title>Services</title>
+<meta http-equiv="Page-Exit" content="revealTrans(duration=3, transition=5)">
+<link href="{siteurl($siteid)}/statics/xnn/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{siteurl($siteid)}/statics/xnn/js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="{siteurl($siteid)}/statics/xnn/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<META http-equiv="Page-Enter" CONTENT="RevealTrans(Duration=4,Transition=4)"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
+</script>
+<meta name="keywords" content="Coffee Bar Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<!--Google Fonts-->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{siteurl($siteid)}/statics/xnn/js/move-top.js"></script>
+<script type="text/javascript" src="{siteurl($siteid)}/statics/xnn/js/easing.js"></script>
+
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+<!-- //end-smoth-scrolling -->
+</head>
+<body>
+<!--header start here-->
+{template "content","header"}
+<!--header end here-->
+<!--services start here-->
+<div class="services">
+	<div class="container">
+		<div class="services-main">
+				<h3>{$CATEGORYS[$catid][catname]}</h3>
+			<div class="services-bot">
+				{pc:content action="lists" catid="$catid" num="4" orderid="id DESC" page="$page"}
+				{php $x=0}
+			{loop $data $k $r}
+			
+				<!-- {php var_dump($r)} -->
+				<div class="col-md-6 services-grid">
+					<div class="col-md-5 serv-img">
+						<a href="{$r[url]}"><img src="{$r[thumb]}" alt="" class="img-responsive"></a>
+						
+					</div>
+					<div class="col-md-7 serv-text">
+						<h4><a href="{$r[url]}">{$r[title]}</a></h4>
+						<p>{$r[description]}</p>
+					</div>
+					
+				</div>
+				{php $x++}
+			{if $x==2}<div class="clearfix"></div><h1>&nbsp;</h1>{/if}
+				{/loop}
+			{/pc}
+			 
+			</div>
+			<!-- <div class="services-bot">
+			{pc:content action="lists" catid="$catid" num="2" orderid="id DESC" page="$page"}
+			{loop $data $r}
+				<div class="col-md-6 services-grid">
+					<div class="col-md-5 serv-img">
+						<a href="#"><img src="{$r[thumb]}" alt="" class="img-responsive"></a>
+					</div>
+					<div class="col-md-7 serv-text">
+						<h4><a href="single.html">{$r[title]}</a></h4>
+						<p>内容更新中...</p>
+					</div>
+				  <div class="clearfix"> </div>
+				</div>
+				{/loop}
+			{/pc}
+				
+			</div>  -->
+		</div>
+	</div>
+</div>
+</body>
+</html>

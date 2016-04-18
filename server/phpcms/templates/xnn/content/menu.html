@@ -1,0 +1,25 @@
+<div class="top-nav">
+						<span class="menu"> <img src="{APP_PATH}statics/xnn/images/icon.png" alt=""/></span>
+						<!-- <a href="{APP_PATH}index.php"><img src="{APP_PATH}statics/xnn/images/logo.gif" style="float:left;height:120px"/></a> -->
+						<div style="float: left"><a href="{APP_PATH}index.php"><img style="max-width: 100%" src="{APP_PATH}statics/xnn/images/logo.gif" /></a></div>
+						<ul class="nav nav-pills nav-justified res">
+							<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=12" 
+							style="font-family:'Microsoft YaHei';padding:32px"><i class="glyphicon glyphicon-star"> </i>关于喜农</a></li>
+							<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=11" data-transition="slide" style="padding:32px"><i  class="glyphicon glyphicon-thumbs-up"> </i>诚意推荐</a></li>
+							<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=13" style="padding:32px"><i class="glyphicon glyphicon-list-alt"> </i>&nbsp;商品列表</a></li>
+							<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=15" style="padding:32px"><i class="glyphicon glyphicon-picture"> </i>&nbsp;精品活动</a></li>
+							<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=14" style="padding:32px"><i class="glyphicon glyphicon-envelope"> </i>&nbsp;联系我们</a></li>
+						</ul>
+						<!-- script-for-menu -->
+						<script>
+							$("span.menu").click(function() {
+								$("ul.res").slideToggle(300, function() {
+									// Animation complete.
+								});
+							});
+						</script>
+						<!-- /script-for-menu -->
+					</div>
+					
+
+					

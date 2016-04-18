@@ -1,0 +1,231 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="Shortcut Icon" href="{IMG_PATH}admin_img/favicon.ico">
+<title>商品列表</title>
+<meta http-equiv="refresh" content="300;url={APP_PATH}index.php"/>
+<script>
+//实现页面自动跳转
+ //setTimeout(function(){
+   //location.href="{APP_PATH}index.php";
+
+  //  },18000);
+</script>
+<link href="{APP_PATH}statics/xnn/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{APP_PATH}statics/xnn/js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link rel="stylesheet" href="{APP_PATH}statics/xnn/css/fakeloader.css">
+<link href="{APP_PATH}statics/xnn/css/mycss.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="{APP_PATH}statics/xnn/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
+</script>
+<meta name="keywords" content="Coffee Bar Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<!--Google Fonts-->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{APP_PATH}statics/xnn/js/move-top.js"></script>
+<script src="{APP_PATH}statics/xnn/js/fakeloader.min.js"></script>
+<script type="text/javascript" src="{APP_PATH}statics/xnn/js/easing.js"></script>
+
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".fakeloader").fakeLoader({
+					timeToHide: 1200,
+					bgColor: "#fff",
+					imagePath: "{APP_PATH}statics/xnn/images/load_logo.gif"
+				});
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+<!-- //end-smoth-scrolling -->
+</head>
+<body>
+<div class="fakeloader"></div>
+<!--header start here-->
+<div class="header" style="height:180px">
+   <div class="container">
+        <div class="header-main">
+			 <div class="logo">
+			   <!--<a href="index.html"><img src="{APP_PATH}statics/xnn/images/logo.png" alt=""></a>-->
+			 </div>
+            <div class="top-nav">
+            	<span class="menu"> <img src="{APP_PATH}statics/xnn/images/icon.png" alt=""/></span>
+				<!-- <a href="{APP_PATH}index.php"><img src="{APP_PATH}statics/xnn/images/logo.gif" style="float:left;height:120px"/></a> -->
+				<div style="float: left;margin-left:-50px;margin-top:20px""><a href="{APP_PATH}index.php"><img style="max-width: 100%" src="{APP_PATH}statics/xnn/images/logo.gif" /></a></div>
+				<ul class="nav nav-pills nav-justified res">
+					<!-- <li><img src="{APP_PATH}statics/xnn/images/logo.gif"style="width:340px;height:120px"></li> -->
+					<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=12" style="padding:32px"><i class="glyphicon glyphicon-star"> </i>关于喜农</a></li>
+					<li ><a class="icon" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=11" style="padding:32px"><i class="glyphicon glyphicon-thumbs-up"> </i>诚意推荐</a></li>
+					<li><a class="active" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=13" style="padding:32px"><i  class="glyphicon glyphicon-list-alt"> </i>商品列表</a></li>
+					<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=15"  style="padding:32px"><i class="glyphicon glyphicon-picture"> </i>精品活动</a></li>
+					<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=14"  style="padding:32px"><i class="glyphicon glyphicon-envelope"> </i>联系我们</a></li>
+				</ul>
+				<!-- script-for-menu -->
+							 <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.res" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
+			<!-- /script-for-menu -->
+			 </div>	
+     <div class="clearfix"> </div>
+   </div>	
+ </div>
+</div>
+<!--header end here-->
+<!--pages-starts-->
+	<!--<div class="pages">
+		<div class="container">
+			<div class="headdings">
+			<h3>商品列表</h3>
+					<div class="services-bot">
+				<div class="col-md-6 services-grid">
+					<div class="col-md-5 serv-img">
+						<a href="#"><img src="{APP_PATH}statics/xnn/images/s2.jpg" alt="" class="img-responsive"></a>
+					</div>
+					<div class="col-md-7 serv-text">
+						<h4><a href="single.html">商品</a></h4>
+						<p>内容更新中...</p>
+					</div>
+				  <div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 services-grid">
+					<div class="col-md-5 serv-img">
+						<a href="#"><img src="{APP_PATH}statics/xnn/images/s3.jpg" alt="" class="img-responsive"></a>
+					</div>
+					<div class="col-md-7 serv-text">
+						<h4><a href="single.html">商品</a></h4>
+						<p>内容更新中...</p>
+					</div>
+				</div>
+			   <div class="clearfix"> </div>
+			</div>
+			<div class="services-bot">
+				<div class="col-md-6 services-grid">
+					<div class="col-md-5 serv-img">
+						<a href="#"><img src="{APP_PATH}statics/xnn/images/s5.jpg" alt="" class="img-responsive"></a>
+					</div>
+					<div class="col-md-7 serv-text">
+						<h4><a href="single.html">商品</a></h4>
+						<p>内容更新中...</p>
+					</div>
+				  <div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 services-grid">
+					<div class="col-md-5 serv-img">
+						<a href="#"><img src="{APP_PATH}statics/xnn/images/s4.jpg" alt="" class="img-responsive"></a>
+					</div>
+					<div class="col-md-7 serv-text">
+						<h4><a href="single.html">商品</a></h4>
+						<p>内容更新中...</p>
+					</div>
+				  <div class="clearfix"> </div>
+				</div>
+			  <div class="clearfix"> </div>
+			</div>	
+			   <div class="clearfix"> </div>
+			</div>
+		</div>	
+	</div>-->
+	<!--       ###############################################################################     -->
+	<div class="clearf"></div>
+	<div class="height_px"></div>
+<div class="img_activity">
+	<div class="clearf"></div>
+	{pc:content action="lists" catid="$catid" num="4" order="listorder DESC" page="$page"}
+		{loop $data $r}
+		<a href="{$r[url]}">
+	<div class="img_block">
+		<div class="thumb">
+		<img src="{$r[thumb]}" width="600px" height="300px" class="img_show"/>
+		<div class="intro_block">
+			{$r[title]}
+
+		</div>
+		<em></em>
+		</div>
+	</div>
+		</a>
+		
+		{/loop}
+		</div>
+
+	{/pc}
+	
+	<!--	<div class="test-c" id="pages">{$pages}</div>  -->
+	<!-- <div class="img_block">
+		<img src="{APP_PATH}statics/xnn/images/bl2.jpg" width="600px" class="img_show"/>
+		<div class="intro_block">
+			活动正在进行中
+
+		</div>
+	</div>
+	<div class="img_block">
+		<img src="{APP_PATH}statics/xnn/images/bl2.jpg" width="600px" class="img_show"/>
+		<div class="intro_block">
+			活动介绍
+
+		</div>
+	</div>
+	<div class="img_block">
+		<img src="{APP_PATH}statics/xnn/images/bl2.jpg" width="600px" class="img_show"/>
+		<div class="intro_block">
+			活动介绍
+
+		</div>
+	</div>
+	<div class="img_block">
+		<img src="{APP_PATH}statics/xnn/images/bl2.jpg" width="600px" class="img_show"/>
+		<div class="intro_block">
+			活动介绍	
+
+		</div>
+	</div> -->
+	<div class="clearf"></div>
+	</div>
+	<div style="clear:both"></div>
+	<div style="width:300px;margin:0 auto;">{$pages}</div>	
+
+      <!--	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-6">
+	<nav>
+         <ul class="pagination pagination-lg">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li>
+               <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+               </a>
+            </li>
+         </ul>
+     </nav>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	</div>
+      -->
+	<!--#######################################返回按钮##################################-->
+		<div style="position:fixed;top:96%;left:94%;border-radius: 8px;background-color:rgb(186,12,47);">
+			
+			<a href="{APP_PATH}index.php">
+				
+				<!--<img src="{APP_PATH}statics/xnn/images/back.png" width="100px">-->
+				<div style="color:white;font-weight:bolder;">返回首页</div>	
+			</a>
+		</div>
+</body>
+</html>

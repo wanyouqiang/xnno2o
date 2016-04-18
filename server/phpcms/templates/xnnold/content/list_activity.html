@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>Blog</title>
+		<link href="{APP_PATH}statics/xnn/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="{APP_PATH}statics/xnn/{APP_PATH}statics/xnn/js/jquery-1.11.0.min.js"></script>
+		<!-- Custom Theme files -->
+		<link href="{APP_PATH}statics/xnn/css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			} >
+		</script>
+		<meta name="keywords" content="Coffee Bar Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"
+		/>
+		<!--Google Fonts-->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="{APP_PATH}statics/xnn/{APP_PATH}statics/xnn/js/move-top.js"></script>
+		<script type="text/javascript" src="{APP_PATH}statics/xnn/{APP_PATH}statics/xnn/js/easing.js"></script>
+
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event) {
+					event.preventDefault();
+					$('html,body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 1000);
+				});
+			});
+		</script>
+		<!-- //end-smoth-scrolling -->
+	</head>
+
+	<body>
+		<!--header start here-->
+		{template "content","header"}
+		<!--header end here-->
+		<!--blog start here-->
+		<div class="blog">
+			<div class="container">
+				<div class="blog-main">
+					<div class="blog-top">
+						<h3>{$CATEGORYS[$catid][catname]}</h3>
+					</div>
+					<div class="bann-info" >
+					
+						<div class="container">
+						<div class="bann-info-main">
+						
+						   {pc:content action="lists" catid="$catid" num="4" order="id DESC" page="$page"}
+                
+                              {loop $data $r}
+									<a href="{$r[url]}">
+									<div class="col-md-5 bann-info-grid">
+										<img src="{$r[thumb]}" alt="" class="img-responsive">
+										<div class="ban-info-details">
+											<h3>{$r[title]}</h3>
+											<p>{$r[description]}</p>
+										</div>
+									</div>
+								</a>
+                             {/loop}
+       
+       
+                              {/pc}
+								
+								
+							</div>
+						<!-- ######################################################### -->
+						<!-- 	<div class="bann-info-main">
+								<a href="services.html">
+									<div class="col-md-5 bann-info-grid">
+										<img src="images/bl3.jpg" alt="" class="img-responsive">
+										<div class="ban-info-details">
+											<h3>活动预告</h3>
+											<p>活动介绍正在更新中...</p>
+										</div>
+									</div>
+								</a>
+								<a href="pages.html">
+									<div class="col-md-5 bann-info-grid">
+										<img src="images/bl2.jpg" alt="" class="img-responsive">
+										<div class="ban-info-details">
+											<h3>活动预告</h3>
+											<p>活动介绍正在更新中...</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="bann-info">
+								<div class="container">
+									<div class="bann-info-main">
+										<a href="services.html">
+											<div class="col-md-5 bann-info-grid">
+												<img src="images/bl.jpg" alt="" class="img-responsive">
+												<div class="ban-info-details">
+													<h3>活动预告</h3>
+													<p>活动介绍正在更新中...</p>
+												</div>
+											</div>
+										</a>
+										<a href="pages.html">
+											<div class="col-md-5 bann-info-grid">
+												<img src="images/bl3.jpg" alt="" class="img-responsive">
+												<div class="ban-info-details">
+													<h3>活动预告</h3>
+													<p>活动介绍正在更新中...</p>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+ -->
+							
+						</div>
+						<div><br></div>
+							<div class="pag-nations">
+								<ul class="p_n-list">
+									<li><span class="list-bar">首页</span></li>
+									<li><span class="list-bar">1</span></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">More</a></li>
+									<li><a href="#">19</a></li>
+									<li><a href="#">20</a></li>
+									<li><a href="#">下一页</a></li>
+								</ul>
+							</div>
+					</div>
+				</div>
+
+	</body>
+
+</html>
